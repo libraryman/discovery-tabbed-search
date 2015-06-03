@@ -84,9 +84,17 @@
 	.searchTerm {
     position: relative;
 }
+
+    #search-header h1{
+    font-size: 1.75em;
+    width: 90%
+    margin:auto;
+    text-align: center;
+    color:#14759f;
+    }
 	
 	#search h3 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     width: 95%;
     margin:auto;
     text-align:left;
@@ -135,4 +143,45 @@
     font-size: .8em;
 	text-decoration: none;
 }
+
+
+/* Button CSS for mobile*/
+.mobile_button {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #63b8ee), color-stop(1, #468ccf));
+    background:-moz-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
+    background:-webkit-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
+    background:-o-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
+    background:-ms-linear-gradient(top, #63b8ee 5%, #468ccf 100%);
+    background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee', endColorstr='#468ccf',GradientType=0);
+    background-color:#63b8ee;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border:4px solid #0179a5;
+    display:inline-block;
+    float:left;
+    cursor:pointer;
+    color:#14396a;
+    font-family:Georgia;
+    font-size:10px;
+    font-weight:bold;
+    padding:20px 20px;
+    text-decoration:none;
+}
+
+
+.mobileHide { display: inline;}
+   /* Smartphone Portrait and Landscape */
+   @media only screen
+   and (min-device-width : 320px)
+   and (max-device-width : 480px){  .mobileHide { display: none;}}
+
+/* Make the button appear when screen shrinks*/
+.mobileShow { display: none;}
+   /* Smartphone Portrait and Landscape */
+   @media only screen
+   and (min-device-width : 320px)
+   and (max-device-width : 480px){ .mobileShow { display: inline;}}
+
 
